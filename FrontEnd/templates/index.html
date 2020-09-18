@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>MasterMind</title>
+    {% endif %}
+</head>
+<body>
+    <h1>MasterMind🤓</h1>
+    <div class="window">
+        <!-- One -->
+        {% for i in range(10) %}
+
+        {% endfor %}
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- two -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- three -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- four -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- five -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- six -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- seven -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- eight -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- nine -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+        <!-- ten -->
+        <div class="game_round" id='one'>
+            <div class="put_colors">
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                <select class="selected_col" id="">
+                    <option value="None"></option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="result"></div>
+        </div>
+
+        <!-- color picker -->
+        <div class="colors">
+            <span class="col" id="black"></span>
+            <span class="col" id="blue"></span>
+            <span class="col" id="brown"></span>
+            <span class="col" id="green"></span>
+            <span class="col" id="orange"></span>
+            <span class="col" id="red"></span>
+            <span class="col" id="white"></span>
+            <span class="col" id="yellow"></span>
+        </div>
+
+        <!-- start and check -->
+        <div class="new_game">
+            <button class="new">Start new game</button>
+            <button class="check">Check</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0F6FA;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    color: #F1501D;
+}
+
+/* main window Box */
+
+.window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    height: 700px;
+    border: 1px solid #F1501D;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+
+
+/* play and get rusult */
+
+.game_round {
+    width: 228px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+
+}
+
+select {
+    -moz-appearance: none; 
+        /* for Safari, Chrome, Opera */ 
+    -webkit-appearance: none;
+}
+
+.put_colors {
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.put_colors .selected_col {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.result {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #9E4B4B;
+}
+
+
+/* color box picker */
+
+.colors {
+    width: 228px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e0e0e0c7;
+    border-radius: 5px;
+}
+
+.col {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#black {
+    background-color: black;
+}
+#blue {
+    background-color: blue;
+}
+#brown {
+    background-color: brown;
+}
+#green {
+    background-color: green;
+}
+#orange {
+    background-color: orange;
+}
+#red {
+    background-color: red;
+}
+#white {
+    background-color: white;
+}
+#yellow {
+    background-color: yellow;
+}
+
+/* start and check buttons */
+
+.new_game {
+    width: 228px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new, .check {
+    height: 60px;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #9E4B4B;
+    color: #9E4B4B;
+    font-size: 15px;
+}
+
+.new {
+    width: 150px;
+}
+
+.check {
+    width: 70px;
+}
+
