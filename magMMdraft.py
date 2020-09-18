@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 from tkinter import *
-if 1 == 1:
+if __name__ == "__main__":
     bclick = True
 
 
@@ -106,10 +106,9 @@ if 1 == 1:
         column += 1
     column = 0
     row += 1
-    checkbtn.grid(row=2, column=0, columnspan=4)
+    checkbtn.grid(row=2, column=0, columnspan=4, sticky=W+E)
     checkbtn.config(command=lambda row=1, column=0, current_button=checkbtn: check(current_button))
     for i in btns:
-
         i.grid(row=row, column=column)
         i.config(command=lambda row=row, column=column, current_button=i: ttt(current_button))
         print(i, i["command"])
@@ -119,5 +118,5 @@ if 1 == 1:
             column = 0
         index += 1
     resetbtn.config(command=lambda current_button=resetbtn: reset(current_button))
-    resetbtn.grid(row=row, column=0, columnspan=4)
+    resetbtn.grid(row=row, column=0, columnspan=4, sticky=W+E)
     tk.mainloop()
