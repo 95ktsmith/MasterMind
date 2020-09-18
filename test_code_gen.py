@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" basic test cases for code stuff """
+
 
 from game_logic.code_gen import generate_code_no_dups
 from game_logic.code_gen import generate_code_dups
