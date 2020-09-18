@@ -17,6 +17,7 @@ if __name__ == "__main__":
               'black': 4, 'white': 5, 'purple': 6, 'brown': 7}
     current_color = colorn[0]
     current_row = 4
+    # answer = better way to get answer
     answer = [random.randint(0, 7) for i in range(4)]
     print(answer)
     guess = [5, 5, 5, 5]
@@ -24,9 +25,9 @@ if __name__ == "__main__":
     def reset(button):
         global guess
         global current_row
+        global answer
         current_row = 4
-        # set new answer
-        print(guess)
+        answer = [random.randint(0, 7) for i in range(4)]
         guess = [5, 5, 5, 5]
         for i in btns:
             i.config(text="", bg='white')
@@ -37,7 +38,7 @@ if __name__ == "__main__":
         global bclick
         global current_color
         global current_row
-        print(button)
+        # print(button)
         print("current row is{}".format(current_row))
         info = button.grid_info()
         print(info['row'], end="")
@@ -45,7 +46,7 @@ if __name__ == "__main__":
         if info['row'] == current_row:
             print("if")
             button.config(text="X", bg=current_color)
-            bclick = False
+            # bclick = False
             guess[info['column']] = colord[current_color]
 
     def check(button):
@@ -75,8 +76,7 @@ if __name__ == "__main__":
         if place == 4:
             print("Congratulations, you win")
             var.set("Congratulations! you win!")
-        # print(info)
-        # print("implement check")
+            current_row += 20
         current_row += 1
         guess = [5, 5, 5, 5]
 
