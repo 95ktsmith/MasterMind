@@ -80,20 +80,17 @@ class MasterMind:
         # print(info['row'], end="")
         # print("----------{}".format(current_row))
         if info['row'] == self.current_row:
-            # print("if")
             button.config(text="X", bg=self.current_color)
-            # bclick = False
             self.guess[info['column']] = self.colord[self.current_color]
 
     def check(self, button):
-        global answer
-        global guess
         place = 0
         correct = 0
-        if self.current_row > 10:
+        if self.current_row > 14:
+            self.var.set("Sorry you're out of tries. You Lose!")
             return
         print(self.guess)
-        print(self.answer)
+        # print(self.answer)
         for i in [0, 1, 2, 3]:
             if self.guess[i] == self.answer[i]:
                 place += 1
@@ -107,6 +104,8 @@ class MasterMind:
             self.var.set("Congratulations! you win!")
             self.current_row += 20
         self.current_row += 1
+        if self.current_row > 14 and place != 4:
+            self.var.set("Sorry you're out of tries. You Lose!")
         self.guess = [5, 5, 5, 5]
 
     def recolor(self, button):
