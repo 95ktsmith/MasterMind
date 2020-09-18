@@ -19,10 +19,12 @@ if 1 == 1:
     current_row = 4
     answer = [random.randint(0, 7) for i in range(4)]
     print(answer)
-    # answer = [0, 1, 2, 7]
     guess = [5, 5, 5, 5]
 
     def reset(button):
+        global guess
+        global current_row
+        current_row = 4
         print(guess)
         guess = [5, 5, 5, 5]
         for i in btns:
