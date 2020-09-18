@@ -25,10 +25,13 @@ if __name__ == "__main__":
         global guess
         global current_row
         current_row = 4
+        # set new answer
         print(guess)
         guess = [5, 5, 5, 5]
         for i in btns:
             i.config(text="", bg='white')
+        global var
+        var.set("Playing again i see")
 
     def ttt(button):
         global bclick
@@ -67,8 +70,11 @@ if __name__ == "__main__":
             elif guess[i] in answer:
                 correct += 1
         print("{} correct {} in the right spot".format(correct, place))
+        global var
+        var.set("{} correct {} in the right spot".format(correct, place))
         if place == 4:
             print("Congratulations, you win")
+            var.set("Congratulations! you win!")
         # print(info)
         # print("implement check")
         current_row += 1
@@ -94,7 +100,9 @@ if __name__ == "__main__":
 
     checkbtn = Button(bg='white', text="check row", height = 1, width=4)
     resetbtn = Button(bg='white', text="reset Game", height=1, width=4)
-   
+    var = StringVar()
+    labelval = Message(tk, bg='white', textvariable=var)
+    var.set("time to see who's the master")
     row = 3
     column = 0
     index = 1
@@ -108,6 +116,7 @@ if __name__ == "__main__":
     row += 1
     checkbtn.grid(row=2, column=0, columnspan=4, sticky=W+E)
     checkbtn.config(command=lambda row=1, column=0, current_button=checkbtn: check(current_button))
+    labelval.grid(row=2, column=4, columnspan=4, rowspan=5, sticky=W+E+N+S)
     for i in btns:
         i.grid(row=row, column=column)
         i.config(command=lambda row=row, column=column, current_button=i: ttt(current_button))
